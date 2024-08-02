@@ -96,6 +96,11 @@ Write a type-annotated function make_multiplier that takes a float multiplier as
 #mandatory
 Annotate the below function’s parameters and return values with the appropriate types
 
+python:
+```
+def element_length(lst):
+    return [(i, len(i)) for i in lst]
+```
 
 
 ### Task: 
