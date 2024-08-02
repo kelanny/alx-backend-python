@@ -103,6 +103,59 @@ def element_length(lst):
 ```
 
 
+### Task: 10. Duck typing - first element of a sequence
+#advanced
+Augment the following code with the correct duck-typed annotations:
+
+Python:
+```
+# The types of the elements of the input are not know
+def safe_first_element(lst):
+    if lst:
+        return lst[0]
+    else:
+        return None11. More involved type annotations
+```
+
+
+### Task: 11. More involved type annotations
+#advanced
+Given the parameters and the return values, add type annotations to the function
+
+Hint: look into TypeVar
+
+```
+def safely_get_value(dct, key, default = None):
+    if key in dct:
+        return dct[key]
+    else:
+        return default
+```
+
+
+### Task: 12. Type Checking
+#advanced
+Use mypy to validate the following piece of code and apply any necessary changes.
+
+Python:
+```
+def zoom_array(lst: Tuple, factor: int = 2) -> Tuple:
+    zoomed_in: Tuple = [
+        item for item in lst
+        for i in range(factor)
+    ]
+    return zoomed_in
+
+
+array = [12, 72, 91]
+
+zoom_2x = zoom_array(array)
+
+zoom_3x = zoom_array(array, 3.0)
+```
+
+
+
 ### Task: 
 
 
